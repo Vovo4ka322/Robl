@@ -661,7 +661,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 968741537}
+      - m_Target: {fileID: 968741539}
         m_TargetAssemblyTypeName: ShurikenWallet, Assembly-CSharp
         m_MethodName: AddValue
         m_Mode: 1
@@ -809,7 +809,7 @@ RectTransform:
   - {fileID: 263057493}
   - {fileID: 1809668322}
   - {fileID: 747284805}
-  m_Father: {fileID: 229248561}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -827,8 +827,8 @@ GameObject:
   - component: {fileID: 812857484}
   - component: {fileID: 812857487}
   - component: {fileID: 812857486}
-  - component: {fileID: 812857485}
   - component: {fileID: 812857488}
+  - component: {fileID: 812857489}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -855,20 +855,6 @@ RectTransform:
   m_AnchoredPosition: {x: -311.61908, y: -92.47976}
   m_SizeDelta: {x: -623.2379, y: -184.9597}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &812857485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 812857483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce00699db6c04b641aab168db191049e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _textMeshPro: {fileID: 812857486}
-  _collector: {fileID: 968741537}
 --- !u!114 &812857486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,6 +996,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &812857489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812857483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40e03c5c5971494c8fd4a5ef2918d64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textMeshPro: {fileID: 812857486}
+  _collector: {fileID: 968741539}
 --- !u!1 &891324892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,7 +1064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 968741538}
-  - component: {fileID: 968741537}
+  - component: {fileID: 968741539}
   m_Layer: 0
   m_Name: Wallet
   m_TagString: Untagged
@@ -1072,21 +1072,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &968741537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968741536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 318315d74afb9c4469cd87d0ca98842b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <ValueForAdd>k__BackingField: 100
-  <MaxValue>k__BackingField: 2000
-  <Value>k__BackingField: 0
 --- !u!4 &968741538
 Transform:
   m_ObjectHideFlags: 0
@@ -1102,6 +1087,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 229248561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &968741539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968741536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb10c263415cd34db533564c2c9de1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ValueForAdd>k__BackingField: 100
+  <MaxValue>k__BackingField: 2000
+  <Value>k__BackingField: 0
 --- !u!1 &1087522667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,9 +1555,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4480440307205033353, guid: c6a7de614cf8cbb41ba2f4968d64ad9d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 968741538}
-    - targetCorrespondingSourceObject: {fileID: 4480440307205033353, guid: c6a7de614cf8cbb41ba2f4968d64ad9d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 754944115}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a7de614cf8cbb41ba2f4968d64ad9d, type: 3}
 --- !u!1660057539 &9223372036854775807
@@ -1569,3 +1566,4 @@ SceneRoots:
   - {fileID: 2020134733}
   - {fileID: 891324894}
   - {fileID: 2120013035031843277}
+  - {fileID: 754944115}
