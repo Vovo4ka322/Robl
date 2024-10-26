@@ -1,10 +1,10 @@
 using TMPro;
 using UnityEngine;
 
-public class ShurikenViewer : MonoBehaviour
+public class NinjitsuViewer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _textMeshPro;
-    [SerializeField] private ShurikenWallet _collector;
+    [SerializeField] private NinjitsuWallet _collector;
 
     private float _minValueViewChange = 1000;
 
@@ -32,7 +32,7 @@ public class ShurikenViewer : MonoBehaviour
 
         int i = 0;
 
-        while(i + 1 < _lettersMoneySymbols.Length && value >= _minValueViewChange)
+        while (i + 1 < _lettersMoneySymbols.Length && value >= _minValueViewChange)
         {
             value /= _minValueViewChange;
             i++;
