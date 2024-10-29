@@ -18,8 +18,8 @@ namespace Codebase.Game.Root.Input
             _inputMap = new InputMap();
             _inputMap.Enable();
             
-            //InitializeStandaloneInput(_inputMap);
-            InitializeMobileInput(_inputMap);
+            InitializeStandaloneInput(_inputMap);
+            //InitializeMobileInput(_inputMap);
         }
 
         private void InitializeStandaloneInput(InputMap inputMap)

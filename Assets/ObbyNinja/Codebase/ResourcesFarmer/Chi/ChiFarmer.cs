@@ -53,4 +53,10 @@ public class ChiFarmer : MonoBehaviour
             yield return oneSecond;
         }
     }
+
+    public void Add(int value)
+    {
+        Value += value;
+        Changed?.Invoke(Value);
+    }
 }
